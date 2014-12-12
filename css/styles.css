@@ -1,0 +1,405 @@
+/*********************************
+GENERAL
+**********************************/
+
+body {
+	font-family: 'Homenaje', sans-serif;
+}
+
+#wrapper {
+	/*We want the width to be no more than 940px across*/
+	max-width: 940px;
+	/*0 is top and the bottom. Auto is the left and right. 
+	Margin is the space outside our div*/
+	margin: 0 auto;
+	/*0 is top and bottom. 5 is left and right. 
+	Padding the space inside our div*/
+	padding: 0 5%;
+}
+
+a {
+	text-decoration: none;
+	color: #0B7093;
+}
+
+/*This tells the images to fill the container. 
+Tells the images to fill the width of the li container*/
+img {
+	max-width: 100%
+}
+
+h3 {
+	margin: 0 0 1em 0;
+	color: #999;
+
+}
+
+
+
+/*********************************
+HEADING
+**********************************/
+
+header {
+	float: left;
+	margin: 0 0 30px 0;
+	padding: 5px 0 0 0;
+	width: 100%;
+}
+
+#logo {
+	text-align: center;
+	margin: 0;
+
+}
+
+h1 {
+	font-family: 'Quicksand', sans-serif;
+	margin: 15px 0;
+	font-size: 4em;
+	font-weight: normal;
+	/*ems are a relative unit of measurement
+	1 em is equivalent to 16px. 1 em is 16 by default*/
+	line-height: 0.8em;
+}
+
+h2 {
+	font-size: 0.75em;
+	/*1st value top, 2nd left and right. Last is bottom*/
+	margin: -5px 0 0;
+	font-weight: normal;
+}
+
+
+
+/*********************************
+NAVIGATION
+**********************************/
+
+nav {
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+	display: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
+}
+
+
+/*********************************
+PAGE: PORTFOLIO;
+**********************************/
+
+#gallery {
+	margin: 0;
+	padding: 0;
+	/*list style removes the bullet points*/
+	list-style: none;
+}
+
+#gallery li {
+	/*Our float removes the images stacked 
+	and makes them side by side*/
+	float: left;
+	/*The images take up 45% of the width no 
+	matter the size of the browser window. On cell phone or desktop, it will be 45%. 
+	45 also gives us our two columns with 10% space in 
+	between them*/
+	width: 45%;
+	/*Each image has a margin of 2.5% 
+	on the left and right sides. 2.5 x 4 is 10! 
+	So we get 100% with the width and margin*/
+	margin: 2.5%;
+	/*The background of the picture is gray, which is the BG color
+	and the color of the text is green.*/
+	background-color: #f5f5f5;
+	color: #bdc3c7;
+}
+
+#gallery li a p {
+	margin: 0;
+	padding: 5%;
+	font-size: 1em;
+	color: #bdc3c7;
+}
+
+.head-title {
+	font-size: 3em;
+	text-align: center;
+	margin-bottom: -55px;
+}
+
+.head-title2 {
+	font-size: 3em;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: -55px;
+}
+
+
+
+/*********************************
+FOOTER
+**********************************/
+
+footer {
+	font-size: 0.75em;
+	clear: both;
+	text-align: center;
+	padding-top: 50px;
+	color: #ccc;
+}
+
+.social-icon {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
+
+
+
+/*********************************
+ABOUT
+**********************************/
+
+.profile-photo {
+	/*This will center our profile picture*/
+	clear: both;
+	display: block;
+	max-width: 150px;
+	margin: 0 auto 30px;
+	border-radius: 100%
+}
+
+
+
+/*********************************
+PAGE: CONTACT;
+**********************************/
+
+.contact-info {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.9em;
+}
+
+.contact-info a {
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+	background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+	background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+	background-image: url('../img/twitter.png');
+}
+
+
+/*********************************
+COLORS
+**********************************/
+
+/*site body*/
+body {
+	background-color: #fff;
+	color: #999;
+}
+
+/*green header*/
+header {
+	background: #0B7093;
+	border-color: #0B5875;
+}
+
+nav {
+	background: #0B5875;
+}
+
+h1, h2 {
+	color: #fff;
+}
+
+
+/*nav background on mobile*/
+
+/*nav a is the visited sudo class. 
+If you visited that link, it will still remain white*/
+nav a, nav a:visited {
+	color: #fff;
+}
+
+/*This is selected nav link color*/
+nav a.selected, nav a:hover {
+	color: #C5A356;
+}
+
+
+/*********************************
+OVERLAY FOR CLICKED IMAGE
+**********************************/
+
+#overlay {
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+#overlay img {
+   position: fixed;
+   top: 5%;
+   left: 50%;
+   width: 600px;
+   height: 450px;
+   margin-top: -225px; /* Half the height */
+   margin-left: -300px; /* Half the width */
+}
+
+
+#overlay p {
+	text-align: center;
+	color: white;
+}
+
+
+
+/*********************************
+JQUERY SLIDE MENU
+**********************************/
+
+.slideout-menu {
+	position: fixed;
+	top: 0;
+	right: -500px;
+	width: 250px;
+	height: 100%;
+	background: rgba(245, 152, 172, 0.90);
+	z-index: 100;
+}
+.slideout-menu h3 {
+	position: relative;
+	padding: 12px 10px;
+	color: white;
+	font-size: 2.0em;
+	font-weight: 400;
+	border-bottom: 4px solid rgba(242, 109, 138, 0.5);
+}
+.slideout-menu .slideout-menu-toggle {
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	display: inline-block;
+	padding: 6px 9px 5px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	line-height: 1;
+	background: rgba(248, 184, 198, 0.9);
+	color: #999;
+	text-decoration: none;
+	vertical-align: top;
+}
+.slideout-menu .slideout-menu-toggle:hover {
+	color: #fff;
+}
+.slideout-menu ul {
+	list-style: none;
+	font-weight: 300;
+}
+.slideout-menu ul li a {
+	position: relative;
+	display: block;
+	padding: 10px;
+	color: white;
+	font-size: 3em;
+	text-decoration: none;
+}
+.slideout-menu ul li a:hover {
+	background: rgba(242, 109, 138, 0.6);
+	/*color: #fff;*/
+}
+.slideout-menu ul li a i {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	opacity: .5;
+}
+
+
+
+/*********************************
+MISCELLANEOUS
+**********************************/
+
+
+#car {
+	background-image: url('../img/car.jpg');
+	background-repeat: no-repeat;
+	width: 600px;
+	height: 210px;
+	position: relative;
+	margin: 0 ;
+	text-align: center;
+	margin-top: 100px;
+	-webkit-transition: -webkit-transform 1s ;
+	/*took 0 auto out of margin*/
+}
+
+#car:hover {
+	-webkit-transform: rotate(-15deg);
+	background-color: none;
+}
+
+#button1:hover {
+	background-image: url('../img/left-2.png');
+	cursor: pointer;
+}
+
+#button2:hover {
+	background-image: url('../img/right-2.png');
+	cursor: pointer;
+}
+
+.buttons {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#low-rider {
+	height: 10px;
+}
+
+#in-touch p {
+	font-size: 1em;
+}
+
+/*
+PICTURES Are reccomended to be sized at 1024 # 768, 
+but we scaled that down a bit to 600 wide and 400 in height 
+
